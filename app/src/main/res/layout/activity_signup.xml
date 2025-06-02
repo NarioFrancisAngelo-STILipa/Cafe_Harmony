@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/lightbrownbg" />
+
+    <ImageView
+        android:layout_width="413dp"
+        android:layout_height="155dp"
+        android:background="@drawable/brownbg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="413dp"
+        android:layout_height="155dp"
+        android:background="@drawable/brownbg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/whitebg"
+        android:layout_width="350dp"
+        android:layout_height="750dp"
+        android:background="@drawable/whiteroundbg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtregistration"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:text="Create Account"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@id/whitebg"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="@id/whitebg"
+        app:layout_constraintTop_toTopOf="@id/whitebg" />
+
+    <EditText
+        android:id="@+id/signupname"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:hint="Name"
+        android:padding="1dp"
+        android:drawableStart="@drawable/namelogo"
+        android:drawablePadding="10dp"
+        app:layout_constraintEnd_toEndOf="@id/whitebg"
+        app:layout_constraintTop_toBottomOf="@id/txtregistration"
+        app:layout_constraintStart_toStartOf="@id/whitebg" />
+
+    <EditText
+        android:id="@+id/signupemail"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:hint="Email"
+        android:padding="1dp"
+        android:drawableStart="@drawable/emaillogo"
+        android:drawablePadding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/signupname"
+        app:layout_constraintStart_toStartOf="@id/whitebg"
+        app:layout_constraintEnd_toEndOf="@id/whitebg"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/signuppassword"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:drawableStart="@drawable/passwordlogosignup"
+        android:drawablePadding="10dp"
+        android:padding="1dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        app:layout_constraintEnd_toEndOf="@+id/whitebg"
+        app:layout_constraintStart_toStartOf="@+id/whitebg"
+        app:layout_constraintTop_toBottomOf="@+id/signupemail" />
+
+    <EditText
+        android:id="@+id/confirmationsignuppassword"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:drawableStart="@drawable/passwordlogosignup"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="40dp"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"
+        android:padding="1dp"
+        app:layout_constraintEnd_toEndOf="@+id/whitebg"
+        app:layout_constraintStart_toStartOf="@+id/whitebg"
+        app:layout_constraintTop_toBottomOf="@+id/signuppassword" />
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#A57951"
+        android:hint="Sign Up"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/whitebg"
+        app:layout_constraintEnd_toEndOf="@+id/whitebg"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/whitebg"
+        app:layout_constraintTop_toBottomOf="@+id/confirmationsignuppassword"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <TextView
+        android:id="@+id/txt_accquestion"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:padding="10dp"
+        android:text="Already have an account?"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/whitebg"
+        app:layout_constraintStart_toStartOf="@+id/whitebg"
+        app:layout_constraintEnd_toStartOf="@id/txt_gobacklogin"/>
+
+    <TextView
+        android:id="@+id/txt_gobacklogin"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:padding="10dp"
+        android:contextClickable="true"
+        android:focusable="true"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/whitebg"
+        app:layout_constraintEnd_toEndOf="@+id/whitebg"
+        app:layout_constraintStart_toEndOf="@+id/txt_accquestion" />
+</androidx.constraintlayout.widget.ConstraintLayout>

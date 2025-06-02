@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "179553306123",
+    "project_id": "cafeharmonydb",
+    "storage_bucket": "cafeharmonydb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179553306123:android:586a071378d0aff93b290e",
+        "android_client_info": {
+          "package_name": "com.example.cafe_harmony"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxrrqiVa5DISvRnyCxEtmN35TlogC07bY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

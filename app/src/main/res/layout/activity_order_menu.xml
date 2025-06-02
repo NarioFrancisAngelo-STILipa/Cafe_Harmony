@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/brownbg"
+    tools:context=".Order_Menu">
+
+    <ImageView
+        android:layout_width="415dp"
+        android:layout_height="150dp"
+        android:background="@drawable/lightbrownbg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_returnto_db"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/arrow_back_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+
+
+    <TextView
+        android:id="@+id/greetingText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Welcome to Cafe Harmony ☕🍝"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/whiteroundbg"
+        android:padding="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+    <ImageView
+        android:id="@+id/img_caramel"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/caramel_machiatto"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@+id/greetingText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_caramel"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/whiteroundbg"
+        android:padding="8dp"
+        android:text="☕ Caramel Macchiato\n₱120.00"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/greetingText"
+        app:layout_constraintStart_toEndOf="@+id/img_caramel"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/img_americano"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/americano"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@+id/txt_caramel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_americano"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/whiteroundbg"
+        android:padding="8dp"
+        android:text="☕ Americano\n₱100.00"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/txt_caramel"
+        app:layout_constraintStart_toEndOf="@+id/img_americano"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/img_cappuccino"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/cappucinno"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@+id/txt_americano"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_cappuccino"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/whiteroundbg"
+        android:padding="8dp"
+        android:text="☕ Cappuccino\n₱110.00"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/txt_americano"
+        app:layout_constraintStart_toEndOf="@+id/img_cappuccino"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/img_aglio"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/aglio_olio"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cappuccino"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_aglio"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/whiteroundbg"
+        android:padding="8dp"
+        android:text="🍝 Aglio Olio\n₱130.00"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cappuccino"
+        app:layout_constraintStart_toEndOf="@+id/img_aglio"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/img_carbonara"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/carbonara"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@+id/txt_aglio"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_carbonara"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/whiteroundbg"
+        android:padding="8dp"
+        android:text="🍝 Carbonara\n₱150.00"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/txt_aglio"
+        app:layout_constraintStart_toEndOf="@+id/img_carbonara"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/img_spaghetti"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/spaghetti"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@+id/txt_carbonara"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_spaghetti"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/whiteroundbg"
+        android:padding="8dp"
+        android:text="🍝 Spaghetti\n₱140.00"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/txt_carbonara"
+        app:layout_constraintStart_toEndOf="@+id/img_spaghetti"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+    <TextView
+        android:id="@+id/btn_payment"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:background="@drawable/whiteroundbg"
+        android:padding="3dp"
+        android:text="Proceed..."
+        android:textAlignment="center"
+        android:textSize="27sp"
+        tools:layout_editor_absoluteX="244dp"
+        tools:layout_editor_absoluteY="820dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
